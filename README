@@ -1,0 +1,48 @@
+/**
+ * @file README
+ *  for jquery.gamequery.utilities.js
+ *
+ * GameQuery Utilities version 1.0-ALPHA-1
+ *
+ * Various functions to make building games with the GameQuery library easier.
+ * The GameQuery library is a javascript game engine with jQuery available at
+ * http://gamequery.onaluf.org. The latest version of these utilities can be
+ * found at http://github.com/aaronwinborn/gameQuery_utilities.
+ *
+ * Copyright (c) 2010 Aaron Winborn
+ * Dual licensed under the MIT license and GPL v.3 or greater.
+ */
+
+/**
+ * Basic functions:
+ *  .x() and .y() are overloaded functions, accepting a wide range of values.
+ *  For performance reasons, you may choose to use .getx(), .sety(), etc.
+ *  However, I have not yet run benchmark tests, and it probably won't matter
+ *  for less than a hundred objects on screen, from anectdotal results.
+ *
+ *  $(this).x();
+ *  $(this).y();
+ *  $(this).x({x: INTEGER|FUNCTION, [relative: BOOLEAN|FUNCTION]});
+ *  $(this).y({y: INTEGER|FUNCTION, [relative: BOOLEAN|FUNCTION]});
+ *  $(this).x(INTEGER|FUNCTION, [BOOLEAN|FUNCTION]);
+ *  $(this).y(INTEGER|FUNCTION, [BOOLEAN|FUNCTION]);
+ *
+ * Low level functions (possibly preferred for performance):
+ *  $(this).getx([BOOLEAN]);
+ *  $(this).gety([BOOLEAN]);
+ *  $(this).setx(INTEGER);
+ *  $(this).sety(INTEGER);
+ *  $(this).getPreviousx();
+ *  $(this).getPreviousy();
+ *
+ * Convenience functions:
+ *  $(this).position({[x: INTEGER|FUNCTION], [y: INTEGER|FUNCTION], [relative: BOOLEAN|FUNCTION]});
+ *  $(this).position(INTEGER|FUNCTION, [INTEGER:FUNCTION], [BOOLEAN|FUNCTION]);
+ *  $(this).move({[x: INTEGER|FUNCTION], [y: INTEGER|FUNCTION], [relative: BOOLEAN|FUNCTION]});
+ *  $(this).move(INTEGER|FUNCTION, [INTEGER:FUNCTION], [BOOLEAN|FUNCTION]);
+ *
+ * Helper functions:
+ *  $(this).getposxy('x'|'y', [BOOLEAN]);
+ *  $(this).setposxy('x'|'y', INTEGER);
+ *  $(this).posxy(); -- Overloaded as per x() and y().
+ */
